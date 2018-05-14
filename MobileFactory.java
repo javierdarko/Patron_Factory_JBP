@@ -9,13 +9,11 @@ public class MobileFactory {
 		}else if(type.equals(Mobile.SAMSUNG)){
 			return new Samsung("Intel");
 		}else if(type.equals(Mobile.MOTOROLA)){
-			return new Motorola("Adreno 506");
-                }else if(type.equals(Mobile.XIAMOI)){
-			return new Xaomi("Qualcomm SnapDragon");
+			return new Motorola(8,"Adreno");
+                }else if(type.equals(Mobile.XIAOMI)){
+			return new Xiaomi(5,"Qualcomm SnapDragon");
                 }else if(type.equals(Mobile.HUAWEI)){
-			return new Huawei("Mali-T830");
+			return new Huawei(9,"Mali");
                 }else {
 			return null;
 		}
-	}
-}
